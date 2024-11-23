@@ -2,7 +2,7 @@ from rouge_score import rouge_scorer
 from readability import Readability
 
 
-def rouge_score(reference : str, generated : str, score_type : any) -> dict:
+def rouge_score(reference: str, generated: str, score_type: any) -> dict:
     """
     Generates Rouge Score for two given summaries
 
@@ -17,8 +17,9 @@ def rouge_score(reference : str, generated : str, score_type : any) -> dict:
     """
     scorer = rouge_scorer.RougeScorer(['rouge' + str(score_type)], use_stemmer=True)
     return scorer.score(reference, generated)
-        
-def flesch_kincaid(generated : str) -> float:
+
+
+def flesch_kincaid(generated: str) -> float:
     """
     Generates Flesch-Kincaid score for a given summary
     (100 word min)
@@ -33,7 +34,8 @@ def flesch_kincaid(generated : str) -> float:
     fk = r.flesch_kincaid()
     return fk.score
 
-def linsear_write(generated : str) -> float:
+
+def linsear_write(generated: str) -> float:
     """
     Generates Linsear Write score for a given summary
     (100 word min)
