@@ -1,3 +1,6 @@
+# MIMIC dataset CSV file
+mimic-iv-bhc.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
