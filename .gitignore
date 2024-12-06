@@ -3,6 +3,7 @@ mimic-iv-bhc.csv
 
 # Saved models
 models/
+checkpoints/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
