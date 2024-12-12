@@ -13,7 +13,7 @@ All relevant datasets and dependencies can be found in the ``medical_summarizati
 
 ## Model Weights
 
-Throughout our codebase are several references to the `models`, `t5-wikismall-mimic-dir`, and `bart-mimic-dir` directories, which we used for storing and loading our model weights. Due to size limits on Canvas, we're unable to submit these folders directly.
+Throughout our codebase are several references to the `models`, `t5-wikismall-mimic-dir`, and `bart-mimic-dir` directories, which we used for storing and loading our model weights. Due to size limits on Canvas, we're unable to submit these folders directly. As such, we'll be attaching a Google Drive link at the bottom of our overview. 
 
 
 ### Metrics
@@ -31,4 +31,5 @@ Files previously used to generate metrics of T5 and BART performance for our pre
 ### Additional Large Files
 
 Model files and a MIMIC CSV can be found here: https://drive.google.com/drive/folders/1qBbqvLzr3qYfc-asrZsK7v74LXq3X0Vr?usp=sharing
-To run evaluation.ipynb without changes, add checkpoint-1000 (BART) and checkpoint-11500 (T5) to a models/ directory, and add mimic-iv-bhc.csv to the existing datasets/mimic-iv-bhc.csv/ directory
+
+To run evaluation.ipynb without changes, add checkpoint-1000 (BART) and checkpoint-11500 (T5) to a ``models/`` directory, and add ``mimic-iv-bhc.csv`` to the existing ``datasets/mimic-iv-bhc.csv/`` directory.
