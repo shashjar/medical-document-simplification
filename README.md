@@ -7,12 +7,18 @@ As such, our project evaluates performance of the BART, T5, and GPT-2 language m
 
 ## Setup
 
-All relevant datasets and dependencies can be found in the ``medical_summarization.ipynb`` Jupyter notebook. The entire notebook can be ran top-to-bottom, and is currently configured to load pre-configured weights from our prior training.
+All relevant datasets and dependencies can be found in the ``medical_summarization.ipynb`` Jupyter notebook. The entire notebook can be ran top-to-bottom, and is currently configured to:
+- load pre-configured weights from prior training 
+- evaluate a sample document.
+
+## Model Weights
+
+Throughout our codebase are several references to the `models`, `t5-wikismall-mimic-dir`, and `bart-mimic-dir` directories, which we used for storing and loading our model weights. Due to size limits on Canvas, we're unable to submit these folders directly.
 
 
 ### Metrics
 
-We primarily use ROUGE, Flesch Kincaid, and Linsear Write as our metrics for evaluting our model performance after fine-tuning. The relevant code for loading in and using these metrics, as well as our sample text for generating summaries, can be found in the ``/metrics`` directory.
+We primarily use ROUG and Flesch Kincaid as our metrics for evaluting our model performance after fine-tuning. Our sample text for generating summaries can be found in the ``/metrics`` directory, while the relevant code for evaluating our models can be found in ``evaluation.ipynb``. An implemention of functions for evaluating our models can be found in ``eval_metrics.py``.
 
 ### Datasets
 
