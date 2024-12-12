@@ -27,3 +27,8 @@ Our datasets used for fine-tuning, Wikismall and MIMIC, can both be found in the
 ### Archive
 
 Files previously used to generate metrics of T5 and BART performance for our presentation can be found in the ``/archive`` directory. The majority of the code found in these Jupyter notebooks has now been consolidated into ``medical_summarization.ipynb``.
+
+### Additional Large Files
+
+Model files and a MIMIC CSV can be found here: https://drive.google.com/drive/folders/1qBbqvLzr3qYfc-asrZsK7v74LXq3X0Vr?usp=sharing
+To run evaluation.ipynb without changes, add checkpoint-1000 (BART) and checkpoint-11500 (T5) to a models/ directory, and add mimic-iv-bhc.csv to the existing datasets/mimic-iv-bhc.csv/ directory
